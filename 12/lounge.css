@@ -1,0 +1,13 @@
+p {
+  color: lightcoral;
+}
+h1,h2{
+  font-family:  Arial;
+  color: rgb(0, 255, 76);
+ 
+}
+h1 {
+  border-bottom: 1px solid black;
+}
+
+ 
