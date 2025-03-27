@@ -20,3 +20,32 @@ body {
   font-family: Verdana, Helvetica , Arial;
   line-height: 1.6em;
 }
+
+p,body,h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.guarantee {
+  border-color:        white;
+  border-width:        1px;
+  border-style:        dashed;
+  background-color:    #a7cece;
+}
+
+.guarantee {
+  border-color:        white;
+  border-width: 1px;
+  border-style: dashed;
+  background-color: #a7cece;
+  padding: 25px;
+}
+
+.guarantee {
+  border-color: white;
+  border-width: 1px;
+  border-style: dashed;
+  background-color: #a7cece;
+  padding: 25px;
+  margin: 30px;
+}
