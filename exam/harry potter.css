@@ -12,6 +12,23 @@ header {
   padding: 10px 20px;
 }
 
+.youtube {
+  display: inline-block;
+  gap: 20px; /* 图标间距 */
+  position: absolute;
+    top: 0;
+    z-index: 10001;
+    padding: 30px 20px;
+}
+
+
+.youtube img {
+  width: 25px;
+  height: 25px;
+  margin-left: 200px;
+  
+}
+
 
 
 .logo {
