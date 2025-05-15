@@ -33,13 +33,16 @@ body {
 
 .logo {
   display: inline-block;
+  width: 1576px;
+  padding-bottom: 22px;
 }
+
 
 .hr {
   position: relative;
-  border: none;
-  border-bottom: 1px solid #949494;
-  width: 100%;
+  border-bottom: solid;
+  color: #949494;
+
 }
 
 
@@ -128,4 +131,67 @@ h1,p {
   height: 480px;
 }
 
+.read {
+  position: absolute;
+  bottom: 470px; /* 调整按钮距离底部的距离 */
+  right: 790px;  /* 调整按钮距离右侧的距离 */
+  padding: 10px 20px;
+  background-color: #5758ff; /* 按钮背景色 */
+  color: white;             /* 文字颜色 */
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 10px;
+}
 
+.read:hover {
+  background-color:#0b163b; /* 鼠标悬停时的背景色 */
+  border-color:#5758ff ;
+ }
+
+.login {
+  position: absolute;
+  bottom: 710px; /* 调整按钮距离底部的距离 */
+  right: 140px;  /* 调整按钮距离右侧的距离 */
+  padding: 10px 20px;
+  background-color: #04041c; /* 按钮背景色 */
+  font-weight: bold;
+  color: white;             /* 文字颜色 */
+  border:  1px solid  white;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login:hover {
+  background-color:white; /* 鼠标悬停时的背景色 */
+  border-color:white;
+ 
+    color: black; /* 初始文字颜色 */
+    transition: all 0.3s; /* 确保颜色变化有过渡效果 */
+  }
+ 
+
+.signup {
+  position: absolute;
+  bottom: 710px; /* 调整按钮距离底部的距离 */
+  right: 20px;  /* 调整按钮距离右侧的距离 */
+  padding: 10px 20px;
+  background-color: #5758ff; /* 按钮背景色 */
+  color: white;             /* 文字颜色 */
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup:hover {
+  background-color:#0b163b; /* 鼠标悬停时的背景色 */
+  border-color: #5758ff;
+ }
