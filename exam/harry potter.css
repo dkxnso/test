@@ -134,10 +134,8 @@ h1,p {
 .img {
   display: block; /* 让图片作为块级元素显示 */
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 1577px;
-  height: 480px;
+  width: 1700px;
+  height: 770px;
 }
 .search {
   flex: 1;
@@ -212,18 +210,23 @@ h1,p {
     transition: all 0.3s; /* 确保颜色变化有过渡效果 */
   }
  
-
 .signup {
   position: absolute;
-  top: 35px;
-  right: 60px;/* 调整按钮距离右侧的距离 */
+  bottom: 710px; /* 调整按钮距离底部的距离 */
+  right: 60px;  /* 调整按钮距离右侧的距离 */
+  padding: 10px 20px;
   background-color: #5758ff; /* 按钮背景色 */
-  color: white;             /* 文字颜色 */
   font-weight: bold;
-  border: 1px solid transparent;
+  color: white;             /* 文字颜色 */
+  border:  1px solid  white;
   border-radius: 50px;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
+.signup:hover {
+  background-color:#5758ff; /* 鼠标悬停时的背景色 */
+  border-color:white;
+    color: black; /* 初始文字颜色 */
+    transition: all 0.3s; /* 确保颜色变化有过渡效果 */}
