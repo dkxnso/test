@@ -1,0 +1,14 @@
+.zxc{
+  border: solid 1px;
+  height: 50px;
+  width: 400px;
+  background-color: red;
+}
+.login{
+  display: inline;
+  border: solid 1px white;
+
+}
+.signup{
+  display: inline;
+}

@@ -53,10 +53,19 @@ body {
   position: relative;
 }
 
+.arrow{
+  transform: rotate(90deg);
+  margin-left: 0;
+}
+
+
+
 nav ul {
 	margin: 0;
 	list-style-type: none;
 	padding: 5px 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
 }
 
 ul li {
@@ -130,6 +139,35 @@ h1,p {
   width: 1577px;
   height: 480px;
 }
+.search {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 20px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 220px;
+  padding: 10px 20px;
+  border: 1px solid #0b163b;
+  border-radius: 20px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+  color: #666;
+  background-color: #2a2c39 ;
+  height: 30px;
+  
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0,123,255,0.25);
+}
 
 .read {
   position: absolute;
@@ -170,7 +208,6 @@ h1,p {
 .login:hover {
   background-color:white; /* 鼠标悬停时的背景色 */
   border-color:white;
- 
     color: black; /* 初始文字颜色 */
     transition: all 0.3s; /* 确保颜色变化有过渡效果 */
   }
@@ -178,9 +215,8 @@ h1,p {
 
 .signup {
   position: absolute;
-  bottom: 710px; /* 调整按钮距离底部的距离 */
-  right: 20px;  /* 调整按钮距离右侧的距离 */
-  padding: 10px 20px;
+  top: 35px;
+  right: 60px;/* 调整按钮距离右侧的距离 */
   background-color: #5758ff; /* 按钮背景色 */
   color: white;             /* 文字颜色 */
   font-weight: bold;
@@ -191,7 +227,3 @@ h1,p {
   transition: background-color 0.3s;
 }
 
-.signup:hover {
-  background-color:#0b163b; /* 鼠标悬停时的背景色 */
-  border-color: #5758ff;
- }
