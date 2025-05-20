@@ -134,8 +134,11 @@ h1,p {
 .img {
   display: block; /* 让图片作为块级元素显示 */
   position: absolute;
-  width: 1700px;
+  width: 1577px;
   height: 770px;
+  bottom: 155px;
+  
+ 
 }
 .search {
   flex: 1;
@@ -213,7 +216,7 @@ h1,p {
 .signup {
   position: absolute;
   bottom: 710px; /* 调整按钮距离底部的距离 */
-  right: 60px;  /* 调整按钮距离右侧的距离 */
+  right: 24px;  /* 调整按钮距离右侧的距离 */
   padding: 10px 20px;
   background-color: #5758ff; /* 按钮背景色 */
   font-weight: bold;
