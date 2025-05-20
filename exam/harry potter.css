@@ -31,12 +31,12 @@ body {
   
 }
 
-.logo {
-  display: inline-block;
-  width: 1px;
-  padding-bottom: 22px;
+.logo img {
+    width: 180px;  /* 根据实际尺寸调整 */
+    height: auto;  /* 保持比例 */
+    display: block;
+    margin: 0 auto; /* 居中 */
 }
-
 
 .hr {
   position: relative;
@@ -48,9 +48,7 @@ body {
 
 
 .logo img {
-  width: 168px;
-  height: auto;
-  position: relative;
+
 }
 
 .arrow{
