@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* 确保元素尺寸包含边框和内边距 */
+}
+
+body {
+  font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10vh; 
+    background-color:#04041c ; 
+    width: 100%;
+}
+
+
+.youtube {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  left: 0;
+  padding: 30px 20px;
+}
+
+
+.youtube img {
+  width: 25px;
+  height: 25px;
+  margin-left: 1px;
+  
+}
+
+.logo img { 
+  width: 165px;
+  height: 60px;  /* 根据实际尺寸调整 */
+  display: block;
+}
+hr{
+  border: solid 1px #363543;
+  width: 100%;
+}
+
+.arrow{
+  transform: rotate(90deg);
+  margin-left: 0;
+}
+
+
+
+nav ul {
+	margin: 0;
+	list-style-type: none;
+	padding: 5px 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+ul li {
+	display: inline-block;
+	padding: 5px 10px 5px 10px;
+  font-size: 13px;
+}
+
+ul li a:link, nav ul li a:visited {
+	color: white;
+	border-bottom: none;
+	font-weight: bold;
+/*
+	text-shadow: 1px 1px 3px #e2c2c2; 
+	text-transform: uppercase;
+*/
+}
+
+ul li.selected {
+	background-color: #c8b99c;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+
+h1,p {
+  color: white;
+  letter-spacing: 1px; 
+}
+
+.text-image-wrapper {
+  position: relative;
+}
+
+.text-image-wrapper h1,
+.text-image-wrapper p {
+  position: absolute; /* 绝对定位，让文字脱离文档流 */
+  z-index: 1; /* 确保文字显示在图片上方 */
+  padding: 20px; /* 给文字添加内边距，让文字有一定的间距 */
+}
+
+.text-image-wrapper h1 {
+  top: 0; /* 距离容器顶部 0 */
+  left: 0; /* 距离容器左侧 0 */
+}
+
+.text-image-wrapper p {
+  top: 150px; /* 距离容器顶部 150px，可以根据实际情况调整 */
+  left: 0; /* 距离容器左侧 0 */
+}
+
+.image{
+  width: 1577px; /* 容器宽度 */
+  padding-top: 56.25%; /* 16:9 比例（9/16=0.5625） */
+  position: relative;
+}
+
+.img {
+  display: block; /* 让图片作为块级元素显示 */
+  position: absolute;
+
+  
+ 
+}
+.search {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 20px;
+}
+
+.search-form {
+  position: relative;
+  left: 450px;
+  bottom: 70px;
+} 
+
+.search-input {
+  width: 220px;
+  padding: 10px 20px;
+  border: 1px solid #0b163b;
+  border-radius: 20px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+  color: #666;
+  background-color: #2a2c39 ;
+  height: 30px;
+  
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0,123,255,0.25);
+}
+
+.read {
+  position: absolute;
+  bottom: 470px; /* 调整按钮距离底部的距离 */
+  right: 790px;  /* 调整按钮距离右侧的距离 */
+  padding: 10px 20px;
+  background-color: #5758ff; /* 按钮背景色 */
+  color: white;             /* 文字颜色 */
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 10px;
+}
+
+.read:hover {
+  background-color:#0b163b; /* 鼠标悬停时的背景色 */
+  border-color:#5758ff ;
+ }
+
+.login {
+  position: absolute;
+  top: 25px; /* 调整按钮距离底部的距离 */
+  right: 140px;  /* 调整按钮距离右侧的距离 */
+  padding: 10px 20px;
+  background-color: #04041c; /* 按钮背景色 */
+  font-weight: bold;
+  color: white;             /* 文字颜色 */
+  border:  1px solid  white;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login:hover {
+  background-color:white; /* 鼠标悬停时的背景色 */
+  border-color:white;
+    color: black; /* 初始文字颜色 */
+    transition: all 0.3s; /* 确保颜色变化有过渡效果 */
+  }
+ 
+.signup {
+  position: absolute;
+  top: 25px; /* 调整按钮距离底部的距离 */
+  right: 24px;  /* 调整按钮距离右侧的距离 */
+  padding: 10px 20px;
+  background-color: #5758ff; /* 按钮背景色 */
+  font-weight: bold;
+  color: white;             /* 文字颜色 */
+  border:  1px solid  white;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup:hover {
+  background-color:#5758ff; /* 鼠标悬停时的背景色 */
+  border-color:white;
+    color: black; /* 初始文字颜色 */
+    transition: all 0.3s; /* 确保颜色变化有过渡效果 */}
+.text-image-wrapper{
+  border: solid 0px;
+  width: 100%;
+  background-image: url(pic/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+
+  
+
+}
+.toubu{
+  border: solid 0px;
+  padding-top: 20px;
+}
+.fangda{
+  position: relative;
+  bottom: 130px;
+  left: 540px;
+}
+.ziti{
+  position: relative;
+  border: solid 0px;
+  font-size: 18px;
+}
+.poi{
+  border: solid 0px;
+  position: absolute;
+  right: 100px;
+}

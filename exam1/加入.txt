@@ -1,0 +1,21 @@
+.image {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+.image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+
+
+
+  <h1>WHAT HAPPENED TO ALL THE MAIN HARRY POTTER CHARACTERS AFTER HOGWARTS?</h2>
+    <p>From common room dramas to classroom hijinks, we know Harry and his Hogwarts pals on-so-well from their school years...</p>
+
+    <div class="image">
+        <img src="pic/background.png">
+    </div>
