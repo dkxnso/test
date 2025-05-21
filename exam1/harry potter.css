@@ -32,19 +32,22 @@ body {
 }
 
 .logo img { 
-  width: 165px;
-  height: 60px;  /* 根据实际尺寸调整 */
+  width: 168px;
+  height: 62px;  /* 根据实际尺寸调整 */
   display: block;
 }
+
 hr{
-  border: solid 1px #363543;
+  border: dotted 1px #363543;
   width: 100%;
 }
 
 .arrow{
   transform: rotate(90deg);
+  position: absolute;
   margin-left: 0;
 }
+
 
 
 
@@ -54,11 +57,12 @@ nav ul {
 	padding: 5px 0;
   border-bottom: 2px solid transparent;
   transition: all 0.3s ease;
+  padding-top: 1px; /* 调整这个值 */
 }
 
 ul li {
 	display: inline-block;
-	padding: 5px 10px 5px 10px;
+	padding: 5px 20px 5px 20px;
   font-size: 13px;
 }
 
@@ -100,16 +104,18 @@ h1,p {
   position: absolute; /* 绝对定位，让文字脱离文档流 */
   z-index: 1; /* 确保文字显示在图片上方 */
   padding: 20px; /* 给文字添加内边距，让文字有一定的间距 */
+  left: 20%;
+
 }
 
 .text-image-wrapper h1 {
   top: 0; /* 距离容器顶部 0 */
-  left: 0; /* 距离容器左侧 0 */
+  left: 20%; /* 距离容器左侧 0 */
 }
 
 .text-image-wrapper p {
-  top: 150px; /* 距离容器顶部 150px，可以根据实际情况调整 */
-  left: 0; /* 距离容器左侧 0 */
+  top: 200px; /* 距离容器顶部 150px，可以根据实际情况调整 */
+  left: 20%; /* 距离容器左侧 0 */
 }
 
 .image{
@@ -133,13 +139,13 @@ h1,p {
 
 .search-form {
   position: relative;
-  left: 450px;
-  bottom: 70px;
+  left: 430px;
+  bottom: 65px
 } 
 
 .search-input {
-  width: 220px;
-  padding: 10px 20px;
+  width: 215px;
+  padding: 10px 10px;
   border: 1px solid #0b163b;
   border-radius: 20px;
   font-size: 15px;
@@ -147,13 +153,13 @@ h1,p {
   transition: all 0.3s ease;
   color: #666;
   background-color: #2a2c39 ;
-  height: 30px;
-  
+  height: 27px;
+  box-sizing: border-box;
 }
 
 .search-input:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 8px rgba(0,123,255,0.25);
+  border-color: #0b163b;
+  box-shadow: 0 0 8px #0b163b(0,123,255,0.25);
 }
 
 .read {
@@ -179,9 +185,9 @@ h1,p {
 
 .login {
   position: absolute;
-  top: 25px; /* 调整按钮距离底部的距离 */
-  right: 140px;  /* 调整按钮距离右侧的距离 */
-  padding: 10px 20px;
+  top: 30px; /* 调整按钮距离底部的距离 */
+  right: 145px;  /* 调整按钮距离右侧的距离 */
+  padding: 8px 19px;
   background-color: #04041c; /* 按钮背景色 */
   font-weight: bold;
   color: white;             /* 文字颜色 */
@@ -201,13 +207,13 @@ h1,p {
  
 .signup {
   position: absolute;
-  top: 25px; /* 调整按钮距离底部的距离 */
+  top: 30px; /* 调整按钮距离底部的距离 */
   right: 24px;  /* 调整按钮距离右侧的距离 */
-  padding: 10px 20px;
+  padding: 8px 24px;
   background-color: #5758ff; /* 按钮背景色 */
   font-weight: bold;
   color: white;             /* 文字颜色 */
-  border:  1px solid  white;
+  border:  1px solid #0b163b ;
   border-radius: 50px;
   font-size: 16px;
   cursor: pointer;
@@ -219,6 +225,7 @@ h1,p {
   border-color:white;
     color: black; /* 初始文字颜色 */
     transition: all 0.3s; /* 确保颜色变化有过渡效果 */}
+
 .text-image-wrapper{
   border: solid 0px;
   width: 100%;
@@ -227,17 +234,16 @@ h1,p {
   background-size: cover;
   width: 100%;
 
-  
-
 }
 .toubu{
   border: solid 0px;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 .fangda{
   position: relative;
-  bottom: 130px;
-  left: 540px;
+  bottom: 124px;
+  left: 520px;
 }
 .ziti{
   position: relative;
@@ -249,3 +255,42 @@ h1,p {
   position: absolute;
   right: 100px;
 }
+
+.search-suggestions {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color:#04041c;
+    border: 1px solid #666;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+/* 关键部分：当输入框获得焦点时显示建议 */
+.search-input:focus + .search-suggestions {
+    display: block;
+}
+
+.suggestion-header {
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #666;
+    border-bottom: 1px solid #eee;
+}
+
+.suggestion-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white ;
+    border-bottom: 1px solid #666;
+    border-bottom: none;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+}
+
+.suggestion-item:hover {
+    background-color: #696b78;
+   
+}
+
