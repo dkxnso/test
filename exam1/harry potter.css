@@ -109,13 +109,13 @@ h1,p {
 }
 
 .text-image-wrapper h1 {
-  top: 0; /* 距离容器顶部 0 */
-  left: 20%; /* 距离容器左侧 0 */
+  top: 150px; /* 距离容器顶部 0 */
+  left: 1040px; /* 距离容器左侧 0 */
 }
 
 .text-image-wrapper p {
-  top: 200px; /* 距离容器顶部 150px，可以根据实际情况调整 */
-  left: 20%; /* 距离容器左侧 0 */
+  top: 280px; /* 距离容器顶部 150px，可以根据实际情况调整 */
+  left: 1040px; /* 距离容器左侧 0 */
 }
 
 .image{
@@ -145,7 +145,7 @@ h1,p {
 
 .search-form {
   position: relative;
-  left: 430px;
+  left: 580px;
   bottom: 65px
 } 
 
@@ -168,10 +168,10 @@ h1,p {
   box-shadow: 0 0 8px #0b163b(0,123,255,0.25);
 }
 
-.read {
+.readmore {
   position: absolute;
-  bottom: 470px; /* 调整按钮距离底部的距离 */
-  right: 790px;  /* 调整按钮距离右侧的距离 */
+  top: 550px; /* 调整按钮距离底部的距离 */
+  right: 50px;  /* 调整按钮距离右侧的距离 */
   padding: 10px 20px;
   background-color: #5758ff; /* 按钮背景色 */
   color: white;             /* 文字颜色 */
@@ -182,9 +182,10 @@ h1,p {
   cursor: pointer;
   transition: all 0.3s;
   margin: 10px;
+  z-index: 2; 
 }
 
-.read:hover {
+.readmore:hover {
   background-color:#0b163b; /* 鼠标悬停时的背景色 */
   border-color:#5758ff ;
  }
@@ -235,11 +236,11 @@ h1,p {
 .text-image-wrapper{
   border: solid 0px;
   width: 100%;
-  background-image: url(pic/background.png);
+  background-image: url(pic/background.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-
+  background-size: contain;
+  position: relative;
+  overflow:hidden;
 }
 .toubu{
   border: solid 0px;
@@ -249,7 +250,7 @@ h1,p {
 .fangda{
   position: relative;
   bottom: 124px;
-  left: 520px;
+  left: 670px;
 }
 .ziti{
   position: relative;
@@ -299,9 +300,17 @@ h1,p {
     background-color: #696b78;
    
 }
-.text-image-wrapper{
-  border: solid 0px;
-  width: 100%;
 
-  background-image: url(pic/potter.jpg);
+.left {
+  position: absolute;
+  top: 0px;
+  left: -950px;
+  height: 550px;
+}
+
+.right {
+  position: absolute;
+  top: 0px;
+  right: -1000px;
+  height: 550px;
 }
