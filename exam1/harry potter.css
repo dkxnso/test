@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial;
+  font-family:"Sofia Pro";
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,14 +119,20 @@ h1,p {
 }
 
 .image{
-  width: 1577px; /* 容器宽度 */
+  border: solid 0px;
+  width: 100%; /* 容器宽度 */
+  background-repeat: no-repeat; /* 取消背景图片重复 */
+
   padding-top: 56.25%; /* 16:9 比例（9/16=0.5625） */
   position: relative;
 }
 
 .img {
   display: block; /* 让图片作为块级元素显示 */
-  position: absolute;
+  width: 100%;  /* 根据实际尺寸调整 */
+
+  display: block;
+  margin: 0 auto;
 
   
  
@@ -293,4 +299,9 @@ h1,p {
     background-color: #696b78;
    
 }
+.text-image-wrapper{
+  border: solid 0px;
+  width: 100%;
 
+  background-image: url(pic/potter.jpg);
+}
