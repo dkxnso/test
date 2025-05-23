@@ -145,7 +145,7 @@ h1,p {
 
 .search-form {
   position: relative;
-  left: 580px;
+  left: 435px;
   bottom: 65px
 } 
 
@@ -240,7 +240,7 @@ h1,p {
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
-  overflow:hidden;
+ 
 }
 .toubu{
   border: solid 0px;
@@ -249,8 +249,8 @@ h1,p {
 }
 .fangda{
   position: relative;
-  bottom: 124px;
-  left: 670px;
+  bottom: 123px;
+  left: 520px;
 }
 .ziti{
   position: relative;
