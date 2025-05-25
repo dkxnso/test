@@ -12,7 +12,9 @@ body {
     height: 10vh; 
     background-color:#04041c ; 
     width: 100%;
+    overflow: hidden;
 }
+
 
 
 .youtube {
@@ -44,11 +46,15 @@ hr{
 
 .arrow{
   transform: rotate(90deg);
-  position: absolute;
-  margin-left: 0;
+  position:relative;
+  margin-left: -15px;
+  margin-top: 8px;
+  
 }
 
-
+.arrow:hover {
+  border-right: 1px solid #fff;
+}
 
 
 nav ul {
@@ -102,7 +108,7 @@ h1,p {
 .text-image-wrapper h1,
 .text-image-wrapper p {
   position: absolute; /* 绝对定位，让文字脱离文档流 */
-  z-index: 1; /* 确保文字显示在图片上方 */
+  z-index: 2; /* 确保文字显示在图片上方 */
   padding: 20px; /* 给文字添加内边距，让文字有一定的间距 */
   left: 20%;
 
@@ -182,7 +188,7 @@ h1,p {
   cursor: pointer;
   transition: all 0.3s;
   margin: 10px;
-  z-index: 2; 
+  z-index:2; 
 }
 
 .readmore:hover {
@@ -203,6 +209,7 @@ h1,p {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
+  z-index: 2;
 }
 
 .login:hover {
@@ -225,6 +232,7 @@ h1,p {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
+  z-index: 2   ;
 }
 
 .signup:hover {
@@ -240,6 +248,7 @@ h1,p {
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
+  z-index: 1;
  
 }
 .toubu{
@@ -272,6 +281,8 @@ h1,p {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     z-index: 100;
+  
+
 }
 
 /* 关键部分：当输入框获得焦点时显示建议 */
@@ -280,10 +291,11 @@ h1,p {
 }
 
 .suggestion-header {
+    font-size: 14px;
+    text-transform: uppercase;
     padding: 10px 15px;
-    font-weight: bold;
-    color: #666;
-    border-bottom: 1px solid #eee;
+    font-weight: 400;
+    color:hsla(0, 0%, 100%, .6 );
 }
 
 .suggestion-item {
@@ -304,13 +316,35 @@ h1,p {
 .left {
   position: absolute;
   top: 0px;
-  left: -950px;
-  height: 550px;
+  left: -50px;
+  height: 540px;
+  animation: slideLeft 1.5s ease-in-out forwards;
+  z-index: 3;
 }
 
 .right {
   position: absolute;
   top: 0px;
-  right: -1000px;
-  height: 550px;
+  right: -50px;
+  height: 540px;
+  animation: slideRight 1.5s ease-in-out forwards;
+  z-index: 3;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-70%);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(73%);
+  }
 }
