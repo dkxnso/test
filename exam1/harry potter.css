@@ -1,16 +1,16 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* 确保元素尺寸包含边框和内边距 */
+  box-sizing: border-box;
 }
 
 body {
-  font-family:"Sofia Pro";
+  font-family: Arial;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 10vh; 
-    background-color:#04041c ; 
+    height: 10vh;
+    background-color:#04041c ;
     width: 100%;
     overflow: hidden;
 }
@@ -30,12 +30,12 @@ body {
   width: 25px;
   height: 25px;
   margin-left: 1px;
-  
+
 }
 
 .logo img { 
   width: 168px;
-  height: 62px;  /* 根据实际尺寸调整 */
+  height: 62px;
   display: block;
 }
 
@@ -63,7 +63,7 @@ nav ul {
 	padding: 5px 0;
   border-bottom: 2px solid transparent;
   transition: all 0.3s ease;
-  padding-top: 1px; /* 调整这个值 */
+  padding-top: 1px;
 }
 
 ul li {
@@ -108,35 +108,34 @@ h1,p {
 .text-image-wrapper h1,
 .text-image-wrapper p {
   position: absolute; /* 绝对定位，让文字脱离文档流 */
-  z-index: 2; /* 确保文字显示在图片上方 */
-  padding: 20px; /* 给文字添加内边距，让文字有一定的间距 */
+  z-index: 2;
+  padding: 20px;
   left: 20%;
 
 }
 
 .text-image-wrapper h1 {
-  top: 150px; /* 距离容器顶部 0 */
-  left: 1040px; /* 距离容器左侧 0 */
+  top: 60px;
+  left: 1040px;
 }
 
 .text-image-wrapper p {
-  top: 280px; /* 距离容器顶部 150px，可以根据实际情况调整 */
-  left: 1040px; /* 距离容器左侧 0 */
+  top: 180px;
+  left: 1040px;
 }
 
 .image{
   border: solid 0px;
-  width: 100%; /* 容器宽度 */
-  background-repeat: no-repeat; /* 取消背景图片重复 */
+  width: 100%; 
+  background-repeat: no-repeat;
 
-  padding-top: 56.25%; /* 16:9 比例（9/16=0.5625） */
+  padding-top: 56.25%;
   position: relative;
 }
 
 .img {
-  display: block; /* 让图片作为块级元素显示 */
-  width: 100%;  /* 根据实际尺寸调整 */
-
+  display: block; /* 让图片变成块级元素*/
+  width: 100%;
   display: block;
   margin: 0 auto;
 
@@ -176,11 +175,11 @@ h1,p {
 
 .readmore {
   position: absolute;
-  top: 550px; /* 调整按钮距离底部的距离 */
-  right: 50px;  /* 调整按钮距离右侧的距离 */
+  top: 330px; 
+  right: 250px;
   padding: 10px 20px;
-  background-color: #5758ff; /* 按钮背景色 */
-  color: white;             /* 文字颜色 */
+  background-color: #5758ff; 
+  color: white;
   font-weight: bold;
   border: 1px solid transparent;
   border-radius: 50px;
@@ -189,6 +188,8 @@ h1,p {
   transition: all 0.3s;
   margin: 10px;
   z-index:2; 
+  opacity: 0; 
+  animation: fadeIn 2s ease-in-out forwards;
 }
 
 .readmore:hover {
@@ -198,12 +199,12 @@ h1,p {
 
 .login {
   position: absolute;
-  top: 30px; /* 调整按钮距离底部的距离 */
-  right: 145px;  /* 调整按钮距离右侧的距离 */
+  top: 30px;
+  right: 145px; 
   padding: 8px 19px;
   background-color: #04041c; /* 按钮背景色 */
   font-weight: bold;
-  color: white;             /* 文字颜色 */
+  color: white;
   border:  1px solid  white;
   border-radius: 50px;
   font-size: 16px;
@@ -215,18 +216,18 @@ h1,p {
 .login:hover {
   background-color:white; /* 鼠标悬停时的背景色 */
   border-color:white;
-    color: black; /* 初始文字颜色 */
+    color: black;
     transition: all 0.3s; /* 确保颜色变化有过渡效果 */
   }
  
 .signup {
   position: absolute;
-  top: 30px; /* 调整按钮距离底部的距离 */
-  right: 24px;  /* 调整按钮距离右侧的距离 */
+  top: 30px;
+  right: 24px;
   padding: 8px 24px;
   background-color: #5758ff; /* 按钮背景色 */
   font-weight: bold;
-  color: white;             /* 文字颜色 */
+  color: white;
   border:  1px solid #0b163b ;
   border-radius: 50px;
   font-size: 16px;
@@ -238,8 +239,9 @@ h1,p {
 .signup:hover {
   background-color:#5758ff; /* 鼠标悬停时的背景色 */
   border-color:white;
-    color: black; /* 初始文字颜色 */
-    transition: all 0.3s; /* 确保颜色变化有过渡效果 */}
+    color: black;
+    transition: all 0.3s;
+  }
 
 .text-image-wrapper{
   border: solid 0px;
@@ -249,8 +251,8 @@ h1,p {
   background-size: contain;
   position: relative;
   z-index: 1;
- 
 }
+
 .toubu{
   border: solid 0px;
   padding-top: 20px;
@@ -258,8 +260,8 @@ h1,p {
 }
 .fangda{
   position: relative;
-  bottom: 123px;
-  left: 520px;
+  bottom: 126px;
+  left: 525px;
 }
 .ziti{
   position: relative;
@@ -285,7 +287,7 @@ h1,p {
 
 }
 
-/* 关键部分：当输入框获得焦点时显示建议 */
+
 .search-input:focus + .search-suggestions {
     display: block;
 }
@@ -317,7 +319,7 @@ h1,p {
   position: absolute;
   top: 0px;
   left: -50px;
-  height: 540px;
+  height: 480px;
   animation: slideLeft 1.5s ease-in-out forwards;
   z-index: 3;
 }
@@ -326,7 +328,7 @@ h1,p {
   position: absolute;
   top: 0px;
   right: -50px;
-  height: 540px;
+  height: 480px;
   animation: slideRight 1.5s ease-in-out forwards;
   z-index: 3;
 }
@@ -348,3 +350,26 @@ h1,p {
     transform: translateX(73%);
   }
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.text-image-wrapper h1 {
+  top: 60px;
+  left: 1040px;
+  animation: fadeIn  2.5s ease-in-out;
+}
+
+.text-image-wrapper p {
+  top: 180px; 
+  left: 1040px;
+  animation: fadeIn 2s ease-in-out ;
+}
+
+
